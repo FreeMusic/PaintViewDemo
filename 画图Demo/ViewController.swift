@@ -8,11 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+/**
+ *  title 跳转的控制器的标题
+ *  `class` 跳转的控制器
+ */
+struct PaintInfoMessage {
+    let title:String
+    let `class` : AnyClass
+}
+
+class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+
+    var tableView:UITableView?
+    
+    var PaintMessages = [
+        PaintInfoMessage.init(title: "画直线", class: PaintLineViewVC.self),
+        PaintInfoMessage.init(title: "画三角形", class: PaintTriangleViewVC.self),
+        PaintInfoMessage.init(title: "画圆形或椭圆", class: PaintCilcleViewVC.self),
+        PaintInfoMessage.init(title: "画圆角矩形", class: PaintRoundedRectangleVC.self),
+        PaintInfoMessage.init(title: "画弧线", class: PaintTrajectoryViewVC.self)
+    ]
+    
+    let titles = ["画直线"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "画图Demo"
+        tableView = UITableView.init(frame: CGRect.init(x: 0, y: NavigationBarHeight, width: kScreenWidth, height: kScreenHeight-NavigationBarHeight), style: UITableViewStyle.plain)
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        self.view.addSubview(tableView!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +47,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
 
+extension ViewController {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")
+        let infoMessage = self.PaintMessages[indexPath.row]
+        cell?.textLabel?.text = infoMessage.title
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return PaintMessages.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let infoMessage = self.PaintMessages[indexPath.row]
+        let vcClass = infoMessage.class as? UIViewController.Type
+        let vc = vcClass!.init()
+        vc.title = infoMessage.title
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

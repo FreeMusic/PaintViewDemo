@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506A421B0E0AF00514682 /* AppDelegate.swift */; };
-		18F506A721B0E0AF00514682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506A621B0E0AF00514682 /* ViewController.swift */; };
 		18F506AA21B0E0AF00514682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F506A821B0E0AF00514682 /* Main.storyboard */; };
 		18F506AC21B0E0AF00514682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F506AB21B0E0AF00514682 /* Assets.xcassets */; };
 		18F506AF21B0E0AF00514682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F506AD21B0E0AF00514682 /* LaunchScreen.storyboard */; };
 		18F506BA21B0E0AF00514682 /* __DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506B921B0E0AF00514682 /* __DemoTests.swift */; };
 		18F506C521B0E0AF00514682 /* __DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506C421B0E0AF00514682 /* __DemoUITests.swift */; };
+		18F506D321B0E0EB00514682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506D221B0E0EB00514682 /* ViewController.swift */; };
+		18F506EA21B11C5700514682 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E321B11C5700514682 /* BaseViewController.swift */; };
+		18F506EB21B11C5700514682 /* MacroDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E421B11C5700514682 /* MacroDefinition.swift */; };
+		18F506EC21B11C5700514682 /* PaintCilcleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E521B11C5700514682 /* PaintCilcleViewVC.swift */; };
+		18F506ED21B11C5700514682 /* PaintLineViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E621B11C5700514682 /* PaintLineViewVC.swift */; };
+		18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E721B11C5700514682 /* PaintRoundedRectangleVC.swift */; };
+		18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E821B11C5700514682 /* PaintTrajectoryViewVC.swift */; };
+		18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		18F506A121B0E0AF00514682 /* 画图Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "画图Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F506A421B0E0AF00514682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18F506A621B0E0AF00514682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18F506A921B0E0AF00514682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18F506AB21B0E0AF00514682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F506AE21B0E0AF00514682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		18F506C021B0E0AF00514682 /* 画图DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "画图DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F506C421B0E0AF00514682 /* __DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __DemoUITests.swift; sourceTree = "<group>"; };
 		18F506C621B0E0AF00514682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F506D221B0E0EB00514682 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18F506E321B11C5700514682 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		18F506E421B11C5700514682 /* MacroDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefinition.swift; sourceTree = "<group>"; };
+		18F506E521B11C5700514682 /* PaintCilcleViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintCilcleViewVC.swift; sourceTree = "<group>"; };
+		18F506E621B11C5700514682 /* PaintLineViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintLineViewVC.swift; sourceTree = "<group>"; };
+		18F506E721B11C5700514682 /* PaintRoundedRectangleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintRoundedRectangleVC.swift; sourceTree = "<group>"; };
+		18F506E821B11C5700514682 /* PaintTrajectoryViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintTrajectoryViewVC.swift; sourceTree = "<group>"; };
+		18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintTriangleViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 		18F5069821B0E0AF00514682 = {
 			isa = PBXGroup;
 			children = (
+				18F506E221B11C5700514682 /* SimpleDraw */,
 				18F506A321B0E0AF00514682 /* 画图Demo */,
 				18F506B821B0E0AF00514682 /* 画图DemoTests */,
 				18F506C321B0E0AF00514682 /* 画图DemoUITests */,
@@ -98,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				18F506A421B0E0AF00514682 /* AppDelegate.swift */,
-				18F506A621B0E0AF00514682 /* ViewController.swift */,
+				18F506D221B0E0EB00514682 /* ViewController.swift */,
 				18F506A821B0E0AF00514682 /* Main.storyboard */,
 				18F506AB21B0E0AF00514682 /* Assets.xcassets */,
 				18F506AD21B0E0AF00514682 /* LaunchScreen.storyboard */,
@@ -123,6 +138,20 @@
 				18F506C621B0E0AF00514682 /* Info.plist */,
 			);
 			path = "画图DemoUITests";
+			sourceTree = "<group>";
+		};
+		18F506E221B11C5700514682 /* SimpleDraw */ = {
+			isa = PBXGroup;
+			children = (
+				18F506E321B11C5700514682 /* BaseViewController.swift */,
+				18F506E421B11C5700514682 /* MacroDefinition.swift */,
+				18F506E521B11C5700514682 /* PaintCilcleViewVC.swift */,
+				18F506E621B11C5700514682 /* PaintLineViewVC.swift */,
+				18F506E721B11C5700514682 /* PaintRoundedRectangleVC.swift */,
+				18F506E821B11C5700514682 /* PaintTrajectoryViewVC.swift */,
+				18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */,
+			);
+			path = SimpleDraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F506A721B0E0AF00514682 /* ViewController.swift in Sources */,
+				18F506ED21B11C5700514682 /* PaintLineViewVC.swift in Sources */,
+				18F506D321B0E0EB00514682 /* ViewController.swift in Sources */,
+				18F506EC21B11C5700514682 /* PaintCilcleViewVC.swift in Sources */,
+				18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */,
 				18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */,
+				18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */,
+				18F506EA21B11C5700514682 /* BaseViewController.swift in Sources */,
+				18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */,
+				18F506EB21B11C5700514682 /* MacroDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chuandukeji.--Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chuandukeji.--Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
