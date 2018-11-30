@@ -8,7 +8,10 @@
 
 import UIKit
 
-
+//结合UIBezierPath 与 CAShapeLayer 画图
+//
+//将UIBezierPath 对象 转化为CGPathRef 对象， 赋值给CAShapeLayer的path属性即可，即可画出各种线条和图形
+//layer.path = path.cgPath
 /**
  *  title 跳转的控制器的标题
  *  `class` 跳转的控制器
@@ -27,7 +30,10 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
         PaintInfoMessage.init(title: "画三角形", class: PaintTriangleViewVC.self),
         PaintInfoMessage.init(title: "画圆形或椭圆", class: PaintCilcleViewVC.self),
         PaintInfoMessage.init(title: "画圆角矩形", class: PaintRoundedRectangleVC.self),
-        PaintInfoMessage.init(title: "画弧线", class: PaintTrajectoryViewVC.self)
+        PaintInfoMessage.init(title: "画弧线", class: PaintTrajectoryViewVC.self),
+        PaintInfoMessage.init(title: "二次贝塞尔曲线", class: QuadRaticBezierVC.self),
+        PaintInfoMessage.init(title: "三次贝塞尔曲线", class: TripleBezierVC.self),
+        PaintInfoMessage.init(title: "绘制饼状图", class: PieChartVC.self)
     ]
     
     let titles = ["画直线"]

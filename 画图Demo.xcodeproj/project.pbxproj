@@ -21,6 +21,10 @@
 		18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E721B11C5700514682 /* PaintRoundedRectangleVC.swift */; };
 		18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E821B11C5700514682 /* PaintTrajectoryViewVC.swift */; };
 		18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */; };
+		18F506F321B11E4F00514682 /* QuadRaticBezierVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506F221B11E4F00514682 /* QuadRaticBezierVC.swift */; };
+		18F506F521B1246D00514682 /* TripleBezierVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506F421B1246D00514682 /* TripleBezierVC.swift */; };
+		18F506F721B12EF700514682 /* PieChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506F621B12EF700514682 /* PieChartVC.swift */; };
+		18F506FB21B12F6B00514682 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506FA21B12F6B00514682 /* PieChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		18F506E721B11C5700514682 /* PaintRoundedRectangleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintRoundedRectangleVC.swift; sourceTree = "<group>"; };
 		18F506E821B11C5700514682 /* PaintTrajectoryViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintTrajectoryViewVC.swift; sourceTree = "<group>"; };
 		18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintTriangleViewVC.swift; sourceTree = "<group>"; };
+		18F506F221B11E4F00514682 /* QuadRaticBezierVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadRaticBezierVC.swift; sourceTree = "<group>"; };
+		18F506F421B1246D00514682 /* TripleBezierVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleBezierVC.swift; sourceTree = "<group>"; };
+		18F506F621B12EF700514682 /* PieChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartVC.swift; sourceTree = "<group>"; };
+		18F506FA21B12F6B00514682 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,8 @@
 		18F5069821B0E0AF00514682 = {
 			isa = PBXGroup;
 			children = (
+				18F506F821B12F3600514682 /* ComplexBezierView */,
+				18F506F121B11DFE00514682 /* ComplexBezierPoint */,
 				18F506E221B11C5700514682 /* SimpleDraw */,
 				18F506A321B0E0AF00514682 /* 画图Demo */,
 				18F506B821B0E0AF00514682 /* 画图DemoTests */,
@@ -152,6 +162,32 @@
 				18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */,
 			);
 			path = SimpleDraw;
+			sourceTree = "<group>";
+		};
+		18F506F121B11DFE00514682 /* ComplexBezierPoint */ = {
+			isa = PBXGroup;
+			children = (
+				18F506F221B11E4F00514682 /* QuadRaticBezierVC.swift */,
+				18F506F421B1246D00514682 /* TripleBezierVC.swift */,
+				18F506F621B12EF700514682 /* PieChartVC.swift */,
+			);
+			path = ComplexBezierPoint;
+			sourceTree = "<group>";
+		};
+		18F506F821B12F3600514682 /* ComplexBezierView */ = {
+			isa = PBXGroup;
+			children = (
+				18F506F921B12F5D00514682 /* PieChartView */,
+			);
+			path = ComplexBezierView;
+			sourceTree = "<group>";
+		};
+		18F506F921B12F5D00514682 /* PieChartView */ = {
+			isa = PBXGroup;
+			children = (
+				18F506FA21B12F6B00514682 /* PieChartView.swift */,
+			);
+			path = PieChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F506F721B12EF700514682 /* PieChartVC.swift in Sources */,
 				18F506ED21B11C5700514682 /* PaintLineViewVC.swift in Sources */,
+				18F506FB21B12F6B00514682 /* PieChartView.swift in Sources */,
 				18F506D321B0E0EB00514682 /* ViewController.swift in Sources */,
 				18F506EC21B11C5700514682 /* PaintCilcleViewVC.swift in Sources */,
 				18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */,
@@ -293,6 +331,8 @@
 				18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */,
 				18F506EA21B11C5700514682 /* BaseViewController.swift in Sources */,
 				18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */,
+				18F506F521B1246D00514682 /* TripleBezierVC.swift in Sources */,
+				18F506F321B11E4F00514682 /* QuadRaticBezierVC.swift in Sources */,
 				18F506EB21B11C5700514682 /* MacroDefinition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

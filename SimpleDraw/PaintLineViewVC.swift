@@ -7,6 +7,15 @@
 //
 /**
  画直线
+ 
+ + (instancetype)bezierPath
+ 生成一个UIBezierPath对象, 多用于画 不规则曲线 或 多边图形
+ 　　
+ - (void)moveToPoint:(CGPoint)point
+ 添加路径起点
+ 　　
+ - (void)addLineToPoint:(CGPoint)point
+ 添加路径起点外的其他点
  */
 import UIKit
 
