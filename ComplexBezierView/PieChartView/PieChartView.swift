@@ -12,17 +12,17 @@ class PieChartView: UIView {
     //设置圆点
     var centerPoint:CGPoint!
     var radius:CGFloat!
-
-    var startAngle = 0
-    var endAngle = 0
-    var allValue = 0
+    
+    var startAngle:Float = 0
+    var endAngle:Float = 0
+    var allValue:Float = 0
     var dataSource = [456, 56, 559]
     var colors = [UIColor.green, UIColor.orange, UIColor.blue]
     
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        radius = frame.size.width*0.6
+        radius = frame.size.width*0.4
         centerPoint = CGPoint.init(x: frame.size.width/2, y: frame.size.height/2)
         //画图
         drawPieChartView()
@@ -31,7 +31,7 @@ class PieChartView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
+    
 }
 /**
  画图
@@ -39,10 +39,10 @@ class PieChartView: UIView {
 
 extension PieChartView {
     func drawPieChartView() {
-
+        
         for index in 0...dataSource.count-1 {
             let value = dataSource[index] 
-            allValue = allValue+value
+            allValue = allValue+Float(value)
         }
         
         //for循环画图
@@ -54,8 +54,9 @@ extension PieChartView {
     func bezierPaint(index:Int) {
         
         let targetValue = dataSource[index]
-        endAngle = startAngle + targetValue/allValue*2*Int(Double.pi)
-        print(endAngle)
+        let ratioString = String(format: "%.5f", Float(targetValue)/Float(allValue))
+        
+        endAngle = startAngle + (Float(ratioString)!-0.005)*2*Float(Double.pi)
         //bezierPath形成闭合的扇形路径  外弧形
         let bezierOutPath = UIBezierPath.init()
         // 添加一条弧线
@@ -65,16 +66,26 @@ extension PieChartView {
         //////外弧形渲染
         let outLayer = CAShapeLayer.init()
         outLayer.lineWidth = 1
-        outLayer.fillColor = UIColor.green.cgColor
+        outLayer.fillColor = colors[index].cgColor
+        outLayer.strokeColor = UIColor.white.cgColor
         outLayer.path = bezierOutPath.cgPath
         self.layer.addSublayer(outLayer)
         
-        if index > 0 {
-            let start = dataSource[index-1]
-            
-            startAngle = startAngle+start/allValue*2*Int(Double.pi)
-        }
+        let start = dataSource[index]
+        let scaleString = String(format: "%.5f", Float(start)/Float(allValue))
+        startAngle = startAngle+(Float(scaleString)!-1)*2*Float(Double.pi)
         
-        print(startAngle)
+        ////bezierPath形成闭合的扇形路径 内弧形
+        let bezierInsidePath = UIBezierPath.init()
+        // 添加一条弧线
+        bezierInsidePath.addArc(withCenter: centerPoint, radius: radius*0.8, startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: true)
+        bezierInsidePath.addLine(to: centerPoint)
+        bezierInsidePath.close()
+        //////内弧形渲染
+        let inSideLayer = CAShapeLayer.init()
+        inSideLayer.lineWidth = 1
+        inSideLayer.fillColor = UIColor.white.cgColor
+        inSideLayer.path = bezierInsidePath.cgPath
+        self.layer.addSublayer(inSideLayer)
     }
 }

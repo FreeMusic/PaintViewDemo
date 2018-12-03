@@ -27,13 +27,15 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
     
     var PaintMessages = [
         PaintInfoMessage.init(title: "画直线", class: PaintLineViewVC.self),
+        PaintInfoMessage.init(title: "画阴影图", class: PaintShadowView.self),
         PaintInfoMessage.init(title: "画三角形", class: PaintTriangleViewVC.self),
         PaintInfoMessage.init(title: "画圆形或椭圆", class: PaintCilcleViewVC.self),
         PaintInfoMessage.init(title: "画圆角矩形", class: PaintRoundedRectangleVC.self),
         PaintInfoMessage.init(title: "画弧线", class: PaintTrajectoryViewVC.self),
         PaintInfoMessage.init(title: "二次贝塞尔曲线", class: QuadRaticBezierVC.self),
         PaintInfoMessage.init(title: "三次贝塞尔曲线", class: TripleBezierVC.self),
-        PaintInfoMessage.init(title: "绘制饼状图", class: PieChartVC.self)
+        PaintInfoMessage.init(title: "绘制饼状图", class: PieChartVC.self),
+        PaintInfoMessage.init(title: "Layer动画", class: LayerAnimationVC.self)
     ]
     
     let titles = ["画直线"]
