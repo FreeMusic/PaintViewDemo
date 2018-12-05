@@ -13,7 +13,7 @@ class PieChartVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let pieView = PieChartView.init(frame: CGRect.init(x: 0, y: 0, width: 0.8*kScreenWidth, height: 0.8*kScreenWidth))
+        let pieView = RYQPieChartView.init(frame: CGRect.init(x: 0, y: 0, width: 0.8*kScreenWidth, height: 0.8*kScreenWidth))
         pieView.center = self.view.center
         pieView.backgroundColor = UIColor.white
         self.view.addSubview(pieView)
