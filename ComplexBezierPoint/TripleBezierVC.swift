@@ -31,11 +31,22 @@ class TripleBezierVC: BaseViewController {
         path.move(to: startPoint)
         //三次贝塞尔曲线
         path.addCurve(to: endPoint, controlPoint1: CGPoint.init(x: 10, y: 0), controlPoint2: CGPoint.init(x: 70, y: 180))
+        //在加  可画出n次贝塞尔曲线
+//        path.addCurve(to: startPoint, controlPoint1: CGPoint.init(x: 40, y: 40), controlPoint2: CGPoint.init(x: 90, y: 120))
         let layer = CAShapeLayer.init()
         layer.lineWidth = 1
         layer.strokeColor = UIColor.green.cgColor
         layer.fillColor = nil
         layer.path = path.cgPath
+        
+        
+        //动画1
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0
+        animation.toValue = 1
+        animation.duration = 2
+        layer.add(animation, forKey: "")
+        
         view.layer.addSublayer(layer)
     }
 

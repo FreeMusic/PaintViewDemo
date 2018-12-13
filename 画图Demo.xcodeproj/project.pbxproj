@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1805276721B4C27C00C47BAC /* LayerAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */; };
 		1805276921B4DF2C00C47BAC /* PaintShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805276821B4DF2C00C47BAC /* PaintShadowView.swift */; };
+		18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */; };
 		18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506A421B0E0AF00514682 /* AppDelegate.swift */; };
 		18F506AA21B0E0AF00514682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F506A821B0E0AF00514682 /* Main.storyboard */; };
 		18F506AC21B0E0AF00514682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F506AB21B0E0AF00514682 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAnimationVC.swift; sourceTree = "<group>"; };
 		1805276821B4DF2C00C47BAC /* PaintShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintShadowView.swift; sourceTree = "<group>"; };
+		18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientVC.swift; sourceTree = "<group>"; };
 		18F506A121B0E0AF00514682 /* 画图Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "画图Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F506A421B0E0AF00514682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F506A921B0E0AF00514682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				18F506F421B1246D00514682 /* TripleBezierVC.swift */,
 				18F506F621B12EF700514682 /* PieChartVC.swift */,
 				1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */,
+				18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */,
 			);
 			path = ComplexBezierPoint;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				18F506EC21B11C5700514682 /* PaintCilcleViewVC.swift in Sources */,
 				18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */,
 				18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */,
+				18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */,
 				18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */,
 				18F506EA21B11C5700514682 /* BaseViewController.swift in Sources */,
 				18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */,

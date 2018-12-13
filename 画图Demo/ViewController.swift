@@ -35,7 +35,8 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
         PaintInfoMessage.init(title: "二次贝塞尔曲线", class: QuadRaticBezierVC.self),
         PaintInfoMessage.init(title: "三次贝塞尔曲线", class: TripleBezierVC.self),
         PaintInfoMessage.init(title: "绘制饼状图", class: PieChartVC.self),
-        PaintInfoMessage.init(title: "Layer动画", class: LayerAnimationVC.self)
+        PaintInfoMessage.init(title: "Layer动画", class: LayerAnimationVC.self),
+        PaintInfoMessage.init(title: "不规则渐变色图形", class: IrregularGradientVC.self)
     ]
     
     let titles = ["画直线"]
