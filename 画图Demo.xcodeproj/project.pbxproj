@@ -28,6 +28,7 @@
 		18F506F521B1246D00514682 /* TripleBezierVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506F421B1246D00514682 /* TripleBezierVC.swift */; };
 		18F506F721B12EF700514682 /* PieChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506F621B12EF700514682 /* PieChartVC.swift */; };
 		18F506FB21B12F6B00514682 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506FA21B12F6B00514682 /* PieChartView.swift */; };
+		18FAA13D21C357860073A8E3 /* TextLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA13C21C357860073A8E3 /* TextLayerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		18F506F421B1246D00514682 /* TripleBezierVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleBezierVC.swift; sourceTree = "<group>"; };
 		18F506F621B12EF700514682 /* PieChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartVC.swift; sourceTree = "<group>"; };
 		18F506FA21B12F6B00514682 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		18FAA13C21C357860073A8E3 /* TextLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				18F506F621B12EF700514682 /* PieChartVC.swift */,
 				1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */,
 				18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */,
+				18FAA13C21C357860073A8E3 /* TextLayerVC.swift */,
 			);
 			path = ComplexBezierPoint;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */,
 				18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */,
 				18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */,
+				18FAA13D21C357860073A8E3 /* TextLayerVC.swift in Sources */,
 				18F506EA21B11C5700514682 /* BaseViewController.swift in Sources */,
 				18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */,
 				18F506F521B1246D00514682 /* TripleBezierVC.swift in Sources */,
