@@ -12,22 +12,9 @@ class PaintLineCapVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let path = UIBezierPath.init()
-        path.move(to: CGPoint.init(x: 50, y: 100))
-        path.addLine(to: CGPoint.init(x: 300, y: 200))
-        path.lineWidth = 40
-        path.lineJoinStyle = .miter
-        path.lineCapStyle = .round
         
-        let layer = CAShapeLayer.init()
-        layer.masksToBounds = true
-        layer.cornerRadius = 1
-        layer.lineWidth = 40
-        layer.strokeColor = black.cgColor
-        layer.fillColor = red.cgColor
-        layer.path = path.cgPath
-        self.view.layer.addSublayer(layer)
+        let view = PaintLineCapView.init(frame: self.view.bounds)
+        self.view.addSubview(view)
     }
     
 }

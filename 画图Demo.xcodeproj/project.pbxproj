@@ -10,6 +10,9 @@
 		1805276721B4C27C00C47BAC /* LayerAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */; };
 		1805276921B4DF2C00C47BAC /* PaintShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805276821B4DF2C00C47BAC /* PaintShadowView.swift */; };
 		1817E35B21C7320300AE5206 /* PaintLineCapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817E35A21C7320300AE5206 /* PaintLineCapVC.swift */; };
+		1817E36121C7835B00AE5206 /* CalculationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817E36021C7835B00AE5206 /* CalculationVC.swift */; };
+		18F4551021C79BAE00B000D3 /* PaintLineCapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4550F21C79BAE00B000D3 /* PaintLineCapView.swift */; };
+		18F4551221C79D5900B000D3 /* PaintDottedLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4551121C79D5900B000D3 /* PaintDottedLineVC.swift */; };
 		18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */; };
 		18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F506A421B0E0AF00514682 /* AppDelegate.swift */; };
 		18F506AA21B0E0AF00514682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F506A821B0E0AF00514682 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 		1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAnimationVC.swift; sourceTree = "<group>"; };
 		1805276821B4DF2C00C47BAC /* PaintShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintShadowView.swift; sourceTree = "<group>"; };
 		1817E35A21C7320300AE5206 /* PaintLineCapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintLineCapVC.swift; sourceTree = "<group>"; };
+		1817E36021C7835B00AE5206 /* CalculationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationVC.swift; sourceTree = "<group>"; };
+		18F4550F21C79BAE00B000D3 /* PaintLineCapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintLineCapView.swift; sourceTree = "<group>"; };
+		18F4551121C79D5900B000D3 /* PaintDottedLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintDottedLineVC.swift; sourceTree = "<group>"; };
 		18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientVC.swift; sourceTree = "<group>"; };
 		18F506A121B0E0AF00514682 /* 画图Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "画图Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F506A421B0E0AF00514682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18F4550E21C79B9C00B000D3 /* PaintLineCapView */ = {
+			isa = PBXGroup;
+			children = (
+				18F4550F21C79BAE00B000D3 /* PaintLineCapView.swift */,
+			);
+			path = PaintLineCapView;
+			sourceTree = "<group>";
+		};
 		18F5069821B0E0AF00514682 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +186,7 @@
 				18F506E921B11C5700514682 /* PaintTriangleViewVC.swift */,
 				1805276821B4DF2C00C47BAC /* PaintShadowView.swift */,
 				1817E35A21C7320300AE5206 /* PaintLineCapVC.swift */,
+				18F4551121C79D5900B000D3 /* PaintDottedLineVC.swift */,
 			);
 			path = SimpleDraw;
 			sourceTree = "<group>";
@@ -185,6 +200,7 @@
 				1805276621B4C27C00C47BAC /* LayerAnimationVC.swift */,
 				18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */,
 				18FAA13C21C357860073A8E3 /* TextLayerVC.swift */,
+				1817E36021C7835B00AE5206 /* CalculationVC.swift */,
 			);
 			path = ComplexBezierPoint;
 			sourceTree = "<group>";
@@ -192,6 +208,7 @@
 		18F506F821B12F3600514682 /* ComplexBezierView */ = {
 			isa = PBXGroup;
 			children = (
+				18F4550E21C79B9C00B000D3 /* PaintLineCapView */,
 				18F506F921B12F5D00514682 /* PieChartView */,
 			);
 			path = ComplexBezierView;
@@ -336,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F4551021C79BAE00B000D3 /* PaintLineCapView.swift in Sources */,
 				18F506F721B12EF700514682 /* PieChartVC.swift in Sources */,
 				18F506ED21B11C5700514682 /* PaintLineViewVC.swift in Sources */,
 				18F506FB21B12F6B00514682 /* PieChartView.swift in Sources */,
@@ -345,8 +363,10 @@
 				18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */,
 				18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */,
 				18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */,
+				18F4551221C79D5900B000D3 /* PaintDottedLineVC.swift in Sources */,
 				18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */,
 				1817E35B21C7320300AE5206 /* PaintLineCapVC.swift in Sources */,
+				1817E36121C7835B00AE5206 /* CalculationVC.swift in Sources */,
 				18FAA13D21C357860073A8E3 /* TextLayerVC.swift in Sources */,
 				18F506EA21B11C5700514682 /* BaseViewController.swift in Sources */,
 				18F506F021B11C5700514682 /* PaintTriangleViewVC.swift in Sources */,
