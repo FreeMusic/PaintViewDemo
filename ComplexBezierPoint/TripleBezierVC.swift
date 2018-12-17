@@ -26,7 +26,7 @@ class TripleBezierVC: BaseViewController {
         let startPoint = CGPoint.init(x: 0, y: 100)
         let endPoint = CGPoint.init(x: 200, y: 50)
         
-        // 绿色二次贝塞尔曲线
+        // 绿色三次贝塞尔曲线
         let path = UIBezierPath.init()
         path.move(to: startPoint)
         //三次贝塞尔曲线

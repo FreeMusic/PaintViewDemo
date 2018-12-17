@@ -17,7 +17,7 @@ class QuadRaticBezierVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         quadRaticBezierView()
         
         sameEndPointQuadRaticBezierView()

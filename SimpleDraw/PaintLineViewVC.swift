@@ -36,7 +36,8 @@ class PaintLineViewVC: BaseViewController {
         linePath.move(to: CGPoint.init(x: 20, y: 300))
         // 其他点
         linePath.addLine(to: CGPoint.init(x: 200, y: 200))
-        linePath.addLine(to: CGPoint.init(x: 90, y: 70))
+        //可以添加n多个点 可为折线，直线等
+//        linePath.addLine(to: CGPoint.init(x: 90, y: 70))
         
         let lineLayer = CAShapeLayer.init()
         

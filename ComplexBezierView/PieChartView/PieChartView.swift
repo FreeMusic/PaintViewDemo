@@ -8,15 +8,13 @@
 
 import UIKit
 
-/*饼状图(折线注释)*/
+/*饼状图*/
 class RYQPieChartView: UIView {
     
     //设置圆点
     var centerPoint:CGPoint!
     var radius:CGFloat!
-    var alterLabel:UILabel!//用户点击圆环的时候，出现的提示框
     var layerWidth = 40*m6Scale//圆环宽度
-    var bedNumLabel:UILabel?//床位数量标签
     
     var startAngle:Float = 0
     var endAngle:Float = 0
