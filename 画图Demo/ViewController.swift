@@ -40,7 +40,8 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
         PaintInfoMessage.init(title: "不规则渐变色图形", class: IrregularGradientVC.self),
         PaintInfoMessage.init(title: "CATextLayer", class: TextLayerVC.self),
         PaintInfoMessage.init(title: "贝塞尔曲线计算", class: CalculationVC.self),
-        PaintInfoMessage.init(title: "绘制虚线", class: PaintDottedLineVC.self)
+        PaintInfoMessage.init(title: "绘制虚线", class: PaintDottedLineVC.self),
+        PaintInfoMessage.init(title: "绘制柱状图动画", class: HistogramVC.self)
     ]
     
     override func viewDidLoad() {
