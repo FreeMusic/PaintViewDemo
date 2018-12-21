@@ -12,6 +12,7 @@ import UIKit
 //
 //将UIBezierPath 对象 转化为CGPathRef 对象， 赋值给CAShapeLayer的path属性即可，即可画出各种线条和图形
 //layer.path = path.cgPath
+
 /**
  *  title 跳转的控制器的标题
  *  `class` 跳转的控制器
@@ -41,7 +42,8 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
         PaintInfoMessage.init(title: "CATextLayer", class: TextLayerVC.self),
         PaintInfoMessage.init(title: "贝塞尔曲线计算", class: CalculationVC.self),
         PaintInfoMessage.init(title: "绘制虚线", class: PaintDottedLineVC.self),
-        PaintInfoMessage.init(title: "绘制柱状图动画", class: HistogramVC.self)
+        PaintInfoMessage.init(title: "绘制柱状图动画", class: HistogramVC.self),
+        PaintInfoMessage.init(title: "蜘蛛网状图", class: SpiderWebVC.self)
     ]
     
     override func viewDidLoad() {

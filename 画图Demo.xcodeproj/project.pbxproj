@@ -13,6 +13,7 @@
 		1817E36121C7835B00AE5206 /* CalculationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817E36021C7835B00AE5206 /* CalculationVC.swift */; };
 		181983C421CA08CA00B8F24D /* HistogramVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181983C321CA08CA00B8F24D /* HistogramVC.swift */; };
 		18517EB521CCDBDA004B563E /* UIColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18517EB421CCDBDA004B563E /* UIColor+Category.swift */; };
+		18517EB721CCE5AF004B563E /* SpiderWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18517EB621CCE5AF004B563E /* SpiderWebVC.swift */; };
 		18F4551021C79BAE00B000D3 /* PaintLineCapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4550F21C79BAE00B000D3 /* PaintLineCapView.swift */; };
 		18F4551221C79D5900B000D3 /* PaintDottedLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4551121C79D5900B000D3 /* PaintDottedLineVC.swift */; };
 		18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */; };
@@ -61,6 +62,7 @@
 		1817E36021C7835B00AE5206 /* CalculationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationVC.swift; sourceTree = "<group>"; };
 		181983C321CA08CA00B8F24D /* HistogramVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramVC.swift; sourceTree = "<group>"; };
 		18517EB421CCDBDA004B563E /* UIColor+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Category.swift"; sourceTree = "<group>"; };
+		18517EB621CCE5AF004B563E /* SpiderWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderWebVC.swift; sourceTree = "<group>"; };
 		18F4550F21C79BAE00B000D3 /* PaintLineCapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintLineCapView.swift; sourceTree = "<group>"; };
 		18F4551121C79D5900B000D3 /* PaintDottedLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintDottedLineVC.swift; sourceTree = "<group>"; };
 		18F4E32621C1FBE30003C2A4 /* IrregularGradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientVC.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				18FAA13C21C357860073A8E3 /* TextLayerVC.swift */,
 				1817E36021C7835B00AE5206 /* CalculationVC.swift */,
 				181983C321CA08CA00B8F24D /* HistogramVC.swift */,
+				18517EB621CCE5AF004B563E /* SpiderWebVC.swift */,
 			);
 			path = ComplexBezierPoint;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				18F506EE21B11C5700514682 /* PaintRoundedRectangleVC.swift in Sources */,
 				18F506A521B0E0AF00514682 /* AppDelegate.swift in Sources */,
 				18F4E32721C1FBE30003C2A4 /* IrregularGradientVC.swift in Sources */,
+				18517EB721CCE5AF004B563E /* SpiderWebVC.swift in Sources */,
 				18F4551221C79D5900B000D3 /* PaintDottedLineVC.swift in Sources */,
 				18F506EF21B11C5700514682 /* PaintTrajectoryViewVC.swift in Sources */,
 				1817E35B21C7320300AE5206 /* PaintLineCapVC.swift in Sources */,
