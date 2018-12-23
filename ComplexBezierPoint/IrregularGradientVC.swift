@@ -12,7 +12,7 @@ class IrregularGradientVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //绘制UIBezierPath路径
         let path = UIBezierPath.init()
         path.move(to: CGPoint.init(x: 0, y: NavigationBarHeight))
